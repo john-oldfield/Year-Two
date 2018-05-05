@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<SplitPane dividerPositions="0.29797979797979796" maxHeight="400.0" maxWidth="600.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AMS.MenuController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <Text layoutX="33.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Active Agents">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="activeUser" fill="#175411" layoutX="5.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="165.0000035762787" />
+            <Button fx:id="logout" layoutX="60.0" layoutY="359.0" mnemonicParsing="false" onAction="#Logout" text="log out" />
+            <Text fx:id="inactiveUser" fill="RED" layoutX="5.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="164.99999253451824" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="421.0" prefWidth="408.0">
+         <children>
+            <Text id="title" layoutX="229.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <TabPane layoutY="74.0" prefHeight="328.0" prefWidth="417.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Agent Activities">
+                     <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="createAgent" layoutX="15.0" layoutY="39.0" mnemonicParsing="false" onAction="#GoToCreateAgent" onMouseEntered="#displayCADescription" onMouseExited="#resetDescription" prefHeight="25.0" prefWidth="100.0" text="Create Agent" />
+                              <Button fx:id="deleteAgent" layoutX="15.0" layoutY="139.0" mnemonicParsing="false" onAction="#GoToDeleteAgent" onMouseEntered="#displayDADescription" prefHeight="25.0" prefWidth="100.0" text="Delete Agent" />
+                              <Button fx:id="modifyAgent" layoutX="15.0" layoutY="89.0" mnemonicParsing="false" onAction="#GoToModifyAgent" onMouseEntered="#displayMADescription" prefHeight="25.0" prefWidth="100.0" text="Modify Agent" />
+                              <Button fx:id="agentSales" layoutX="15.0" layoutY="189.0" mnemonicParsing="false" onAction="#GoToAgentSales" onMouseEntered="#displayASDescription" prefHeight="25.0" prefWidth="100.0" text="Agent Sales" />
+                              <Label fx:id="description" alignment="CENTER" contentDisplay="CENTER" layoutX="164.0" layoutY="37.0" prefHeight="197.0" prefWidth="239.0" text="Description" textAlignment="CENTER" wrapText="true" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                <Tab text="Ticket Activities">
+                     <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="createTicket" layoutX="15.0" layoutY="39.0" mnemonicParsing="false" onAction="#GoToCreateTicket" onMouseEntered="#displayCTDescription" onMouseExited="#resetDescription" prefHeight="25.0" prefWidth="100.0" text="Create Ticket" />
+                              <Button fx:id="deleteTicket" layoutX="15.0" layoutY="90.0" mnemonicParsing="false" onAction="#GoToDeleteTicket" onMouseEntered="#displayDTDescription" onMouseExited="#resetDescription" prefHeight="25.0" prefWidth="100.0" text="Delete Ticket" />
+                              <Button fx:id="clientList" layoutX="15.0" layoutY="189.0" mnemonicParsing="false" onAction="#GoToClientList" onMouseEntered="#displayTSDescription" onMouseExited="#resetDescription" prefHeight="25.0" prefWidth="100.0" text="Clients List" />
+                              <Label fx:id="description1" alignment="CENTER" layoutX="150.0" layoutY="29.0" prefHeight="190.0" prefWidth="253.0" text="Description" textAlignment="CENTER" wrapText="true" />
+                              <Button fx:id="ticketValidity" layoutX="15.0" layoutY="137.0" mnemonicParsing="false" onAction="#GoToTicketValidity" onMouseEntered="#displayTVDescription" onMouseExited="#resetDescription" prefHeight="25.0" prefWidth="100.0" text="Ticket Validity" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

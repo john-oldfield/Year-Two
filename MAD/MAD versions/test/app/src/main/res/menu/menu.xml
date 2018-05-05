@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/map" android:title="@string/map"/>
+    <item android:id="@+id/addPOI" android:title="@string/addPOI"/>
+    <item android:id="@+id/saveFile" android:title="@string/saveFile"/>
+    <item android:id="@+id/loadFile" android:title="@string/loadFile"/>
+    <item android:id="@+id/saveWeb" android:title="@string/saveWeb"/>
+    <item android:id="@+id/loadWeb" android:title="@string/loadWeb"/>
+    <item android:id="@+id/listPOI" android:title="@string/listPOI"/>
+    <item android:id="@+id/preferences" android:title="@string/preferences"/>
+</menu>

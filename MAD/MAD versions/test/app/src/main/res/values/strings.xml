@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PointsOfInterest</string>
+    <string name="addPOI">Add POI</string>
+    <string name="loadWeb">Load from Web</string>
+    <string name="saveWeb">Save to Web</string>
+    <string name="loadFile">Load from File</string>
+    <string name="saveFile">Save to File</string>
+    <string name="listPOI">List of POI</string>
+    <string name="preferences">Preferences</string>
+    <string name="map">Map</string>
+</resources>
